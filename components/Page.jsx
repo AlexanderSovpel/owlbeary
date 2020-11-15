@@ -16,7 +16,9 @@ export default function Page(props) {
       <Header />
       <Breadcrumbs items={breadcrumbs} className="mb-2" />
 
-      {children}
+      <section className="prose">
+        {children}
+      </section>
 
       {/* <Footer /> */}
     </Layout>

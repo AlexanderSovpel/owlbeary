@@ -13,16 +13,16 @@ export default function ReportsPage(props) {
       { label: 'Reports' },
     ]}>
       <h1 className="text-xl font-bold">Reports</h1>
-      <ul className="mt-4">
+      <section className="mt-4">
         {reports.map((report) => (
-          <li key={report.id} className="py-1">
+          <article key={report.id} className="py-1">
             <Link href={`/reports/${report.id}`}>
               <a className="block text-lg text-blue-500">{report.title}</a>
             </Link>
             <Date value={report.date} className="text-sm text-gray-500" />
-          </li>
+          </article>
         ))}
-      </ul>
+      </section>
     </Page>
   );
 }

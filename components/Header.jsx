@@ -10,7 +10,7 @@ export default function Header(props) {
         <Logo />
       </Link>
       <Nav items={[
-        { href: "/", label: "Home" },
+        { href: "/", label: "Home", exact: true },
         { href: "/reports", label: "Reports" },
         { href: "/persons", label: "Persons" },
         { href: "/artifacts", label: "Artifacts" },

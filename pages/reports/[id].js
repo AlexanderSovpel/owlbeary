@@ -5,7 +5,6 @@ import { getListIds, getItem } from '../../lib/reports';
 
 export default function ReportPage(props) {
   const { report = {} } = props;
-  console.log(report.text);
 
   return (
     <Page
@@ -13,7 +12,7 @@ export default function ReportPage(props) {
       breadcrumbs={[
         { href: "/", label: "Home" },
         { href: "/reports", label: "Reports" },
-        { label: report.id },
+        { label: report.title },
       ]}
     >
       <h1 className="text-xl font-bold">{report.title}</h1>

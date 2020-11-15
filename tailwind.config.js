@@ -1,9 +1,10 @@
 // tailwind.config.js
 module.exports = {
-  purge: [
-    // Use *.tsx if using TypeScript
-    './pages/**/*.js',
-    './components/**/*.js'
-  ]
-  // ...
+  future: {
+    purgeLayersByDefault: true,
+  },
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
