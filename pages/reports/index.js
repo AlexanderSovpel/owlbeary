@@ -14,6 +14,11 @@ export default function ReportsPage(props) {
     ]}>
       <h1 className="text-xl font-bold">Reports</h1>
       <section className="mt-4">
+        <article className="py-1">
+          <Link href="/reports/new">
+            <a className="block text-lg text-blue-500">New Report</a>
+          </Link>
+        </article>
         {reports.map((report) => (
           <article key={report.id} className="py-1">
             <Link href={`/reports/${report.id}`}>
