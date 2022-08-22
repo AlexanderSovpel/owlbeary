@@ -17,6 +17,7 @@ export default function ReportPage(props) {
     >
       <h1 className="text-xl font-bold">{report.title}</h1>
       <Date value={report.date} className="text-sm text-gray-500" />
+      <p className="text-sm text-gray-500 m-0">Officer: {report.author}</p>
       <article className="mt-4" dangerouslySetInnerHTML={{ __html: report.text }} />
     </Page>
   );
